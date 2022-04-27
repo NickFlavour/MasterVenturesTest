@@ -1,9 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 html,
 body {
+  --pageBG: #0d2436;
+  --textColor: #fff;
+  --hoverFontColour: #ccc;
+  --nomineeCard: #009b86;
+  --cardAndButtonHover: #34ac9c;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--pageBG);
+  color: var(--textColor);
+  font-family: "Roboto";
 }
 
 a {
@@ -13,4 +21,17 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  color: var(--textColor);
+  border: 1px solid var(--textColor);
+  background: var(--pageBG);
+  padding: 1em;
+}
+
+button:hover {
+  color: var(--hoverFontColour);
+  transition: all 0.15s ease-in;
+  cursor: pointer;
 }

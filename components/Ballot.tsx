@@ -20,7 +20,8 @@ export default function Ballot({
           const blockBallotSelection =
             ballot.hasOwnProperty(SELECTION_PROPERTY);
 
-          const thisBallotIsSelected = ballot["selection"] === nominee.title;
+          const thisBallotIsSelected =
+            ballot[SELECTION_PROPERTY] === nominee.title;
           return (
             <span
               className={
